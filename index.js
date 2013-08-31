@@ -1,9 +1,13 @@
 //Toggle the dropdowns when clicked
 $('.expand').click(function() {
-  $(this).parent().next().toggle(200);
-  if ($(this).parent().next(':hidden').length) {
-    $(this).text('[expand]');
+  var info = $(this).parent().next();
+  if (info.css('display') == 'none') {
+    $(this).text('[-]');
   } else {
-    $(this).text('[collapse]');
+    $(this).text('[+]');
   }
+  info.slideToggle(200);
 });
+
+$('#valid').attr('href', 'http://validator.w3.org/check?uri=' +
+    encodeURIComponent(location.href));

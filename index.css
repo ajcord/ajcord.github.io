@@ -1,50 +1,85 @@
 html {
-  background-color: #ccc;
+  background-color: #fff;
 }
 
 body {
-  background-color: #fff;
-  box-shadow: 0 0 20px #000;
-  font: 10pt normal Helvetica, Arial, sans-serif;
+  font: 16pt normal Helvetica, Arial, sans-serif;
   margin: auto;
   padding: 40px;
-  width: 880px;
+  width: 960px;
+  color: #000;
 }
 
-h1, h2 {
-  background-color: #c8e3ff;
-  margin: 0 -40px;
-  padding: 5px 40px;
+#me {
+  margin-bottom: 1.5em;
 }
 
-header > h1 {
-  padding: 20px 40px;
+.code {
+  font: 2em normal "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
+  color: #800000;
 }
 
+.big {
+  font-size: 3em;
+}
+
+.small {
+  font-size: 1.5em;
+}
+
+.tiny {
+  font-size: 1em;
+}
+
+.angle, .value {
+  color: #0000ff;
+}
+
+.attr {
+  color: #ff0000;
+}
+
+.doctype {
+  font-size: 1em;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.doctype > a {
+  text-decoration: none;
+}
+
+a {
+  color: #00b;
+}
+
+.code a {
+  color: inherit;
+}
+
+section, p, ul, h4, .info {
+  margin-left: 3em;
+}
+
+section {
+  margin-bottom: 5em;
+}
+
+p, li {
+  line-height: 1.5em;
+}
 
 .performance {
   font-style: italic;
-}
-
-.time:before {
-  color: #555;
-  content: "Time: ";
 }
 
 .hidden {
   display: none;
 }
 
-.expanded {
-  /*border: 1px solid black;*/
-}
-
-.indent {
-  padding-left: 40px;
-}
-
-.indent > p, .indent > ul {
-  margin: 5px;
+.info {
+  overflow: hidden; /* Fixes display issue when toggling section */
 }
 
 .expand {
@@ -53,9 +88,11 @@ header > h1 {
   -webkit-user-select: none;
 }
 
-footer {
-  font-size: 0.8em;
-  padding: 20px;
-  background-color: #eee;
-  margin: 20px -20px -20px -20px;
+.social-icon {
+  margin-right: 40px;
+}
+
+.social-icon > img {
+  width: 96px;
+  height: 96px;
 }
