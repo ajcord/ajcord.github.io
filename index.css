@@ -75,7 +75,7 @@ section {
   display: none;
 }
 
-.info > *, .info {
+.info > *, .info, p {
   margin-left: 3em;
 }
 
