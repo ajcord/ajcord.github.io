@@ -67,8 +67,24 @@ a > img {
   color: inherit;
 }
 
-section, p, ul, h4, .info {
+section {
   margin-left: 3em;
+}
+
+.hidden {
+  display: none;
+}
+
+.info > *, .info {
+  margin-left: 3em;
+}
+
+.info {
+  overflow: hidden; /* Fixes display issue when toggling section */
+}
+
+.info > h3 {
+  margin-left: 0;
 }
 
 section {
@@ -81,14 +97,6 @@ p, li {
 
 .performance {
   font-style: italic;
-}
-
-.hidden {
-  display: none;
-}
-
-.info {
-  overflow: hidden; /* Fixes display issue when toggling section */
 }
 
 .expand {
