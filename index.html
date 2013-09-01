@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>&lt;alex_cordonnier&gt;</title>
+    <meta name="viewport" content="width=960px">
     <link rel="stylesheet" href="index.css" />
     <!--[if lt IE 9]>
       <script src="html5shiv-printshiv.js"></script>
@@ -15,7 +16,7 @@
       <section id="about">
         <h1 class="code"><span class="angle">&lt;</span>about<span class="angle">&gt;</span></h1>
         <p>
-          My name is Alex Cordonnier, and I'm a freshman at the <a href="http://www.illinois.edu" target="_blank">University of Illinois at Urbana&#8209;Champaign</a> studying Computer Science. I'm from <a href="http://www.versaillesohio.cc" target="_blank">a small town in Ohio</a> and love to program and make websites. A few of my hobbies include dreaming up projects and making them, whether programming or hardware-related, and working on theater lighting.
+          My name is Alex Cordonnier, and I'm a freshman at the <a href="http://www.illinois.edu" target="_blank">University of Illinois at Urbana&#8209;Champaign</a> studying Computer Science. I'm from <a href="http://www.versaillesohio.cc" target="_blank">a small town in Ohio</a> and love to program and make websites. A few of my hobbies include dreaming up <a href="#projects">projects</a> and making them, whether programming or hardware-related, and working on theater lighting.
         </p>
         <h2 class="code"><span class="angle">&lt;/</span>about<span class="angle">&gt;</span></h2>
       </section>
@@ -52,6 +53,13 @@
           <p><a href="https://chrome.google.com/webstore/detail/queria-toolbar-for-google/bnabedeodphlebnlohfpmmiinphfadem" target="_blank" title="Chrome Web Store">Queria Toolbar - Chrome Web Store</a></p>
           <p><img src="queria_toolbar.jpg" alt="Queria Toolbar screenshot"></p>
           <h3 class="small code"><span class="angle">&lt;/</span>queria_toolbar<span class="angle">&gt;</span></h3>
+        </div>
+        <h3 id="data-dropdown" class="small code dropdown"><span class="expand" title="Click to toggle details">[+]</span><span class="angle">&lt;</span>data_project<span class="angle">&gt;</span></h3>
+        <div id="data-info" class="hidden info">
+          <p>
+            In February 2013, I started designing a peripheral for my TI-84 graphing calculator that would allow it to run theater lights over the DMX protocol. I dubbed it the DATA Project, which stands for DMX-Arduino-TI Adapter. The idea is that the calculator sends changes in channel values to an Arduino, which processes the new channel value(s) while also transmitting DMX packets 44 times per second. The adapter is designed to be compatible with all TI calculators that can send data over the link port at 9.6 kbps, which encompasses nearly all TI graphing calculators. In the summer of 2013, I bought the parts for the project online, and I am now working on programming the Arduino firmware. The project is available on <a href="https://www.github.com/ajcord/DATA-Project" target="_blank">GitHub</a>.
+          </p>
+          <h3 class="small code"><span class="angle">&lt;/</span>data_project<span class="angle">&gt;</span></h3>
         </div>
         <h3 id="trains-dropdown" class="small code dropdown"><span class="expand" title="Click to toggle details">[+]</span><span class="angle">&lt;</span>train_game<span class="angle">&gt;</span></h3>
         <div id="trains-info" class="hidden info">
@@ -239,8 +247,8 @@
       </section>
       <section>
         <h1 class="small code"><span class="angle">&lt;</span>education<span class="angle">&gt;</span></h1>
+        <h2>Bachelor of Science in Computer Science</h2>
         <p>
-          Bachelor of Science in Computer Science<br>
           University of Illinois at Urbana-Champaign, Class of 2017<br>
           James Scholar Honors Program<br>
         </p>
