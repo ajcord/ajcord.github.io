@@ -10,12 +10,17 @@ body {
   color: #000;
 }
 
+#resume-content {
+  display: none;
+}
+
 #me {
   margin-bottom: 1.5em;
 }
 
 .code {
-  font: 2em normal "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
+  /*font: 2em normal "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;*/
+  font: 2em normal 'Courier New', Courier, monospace;
   color: #800000;
 }
 

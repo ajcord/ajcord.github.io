@@ -1,0 +1,31 @@
+#content {
+  display: none;
+}
+
+#resume-content {
+  display: block;
+}
+
+@page {
+  margin: 1in;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 12pt;
+}
+
+section {
+  margin-bottom: 1em;
+}
+
+section > h2 {
+  font-size: 1em;
+  margin-left: 3em;
+  margin-top: 2em;
+}
+/*
+h1, h2 {
+  margin: 0;
+}*/

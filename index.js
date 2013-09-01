@@ -11,3 +11,5 @@ $('.expand').click(function() {
 
 $('#valid').attr('href', 'http://validator.w3.org/check?uri=' +
     encodeURIComponent(location.href));
+
+$('#print-link').click(function(){print()});
