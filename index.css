@@ -1,10 +1,10 @@
 /*@font-face {
   font-family: "Courier New";
-  src: url("courier-new.ttf");
+  src: url("assets/courier-new.ttf");
 }*/
 
 html {
-  background-color: #fff;
+  background-color: #eee;
 }
 
 body {
