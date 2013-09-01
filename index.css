@@ -20,7 +20,7 @@ body {
 }
 
 #me {
-  margin: 1em 0 3.33em 0;
+  margin: 1em 0 0 0;
 }
 
 .code {
@@ -65,7 +65,7 @@ a {
   color: #00b;
 }
 
-a > img {
+a > img, iframe {
   border: 0;
 }
 
@@ -74,11 +74,10 @@ a > img {
 }
 
 section {
-  margin-bottom: 10em;
-  display: block;
+  margin: 10em 0 15em 0;
 }
 
-section, section > ul {
+section > ul {
   margin-left: 3em;
 }
 
@@ -86,7 +85,7 @@ section, section > ul {
   display: none;
 }
 
-.info > *, .info, p {
+.info > *, .info, p, section > ul, section {
   margin-left: 3em;
 }
 
@@ -96,10 +95,6 @@ section, section > ul {
 
 .info > h3 {
   margin-left: 0;
-}
-
-iframe {
-  border: 0;
 }
 
 p, li {
@@ -127,7 +122,12 @@ p, li {
   height: 96px;
 }
 
+#get-resume-no-print {
+  display: none;
+}
+
 @media print {
+/*Show only the resume when printing instead of the actual page*/
   html {
     background-color: transparent;
   }
@@ -164,7 +164,28 @@ p, li {
 }
 
 @media only screen and (max-device-width: 500px) {
+/*Respond to smartphones and other small screens*/
   body {
     font-size: 22pt;
+  }
+  
+  section {
+    margin: 7em 0;
+  }
+  
+  .info, p, section > ul {
+    margin-left: 0;
+  }
+  
+  .info > h3 {
+    margin-left: 1em;
+  }
+  
+  #get-resume-no-print {
+    display: block;
+  }
+  
+  #get-resume-print {
+    display: none;
   }
 }
