@@ -20,14 +20,11 @@ body {
 }
 
 #me {
-  margin-bottom: 1.5em;
+  margin: 1em 0 3.33em 0;
 }
 
 .code {
-  /*font: 2em normal "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;*/
-  /*font: 2em normal "Courier New", Courier, monospace;*/
-  /*font: 2em normal "Consolas", "Monaco", monospace;*/
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: normal;
   font-family: "Courier New", "Courier", monospace;
   color: #800000;
@@ -77,8 +74,12 @@ a > img {
 }
 
 section {
-  margin-left: 3em;
+  margin-bottom: 10em;
   display: block;
+}
+
+section, section > ul {
+  margin-left: 3em;
 }
 
 .hidden {
@@ -95,10 +96,6 @@ section {
 
 .info > h3 {
   margin-left: 0;
-}
-
-section {
-  margin-bottom: 5em;
 }
 
 iframe {
@@ -157,10 +154,6 @@ p, li {
     font-size: 1em;
     margin-left: 3em;
     margin-top: 2em;
-  }
-  
-  section > ul {
-    margin-left: 3em;
   }
 }
 
