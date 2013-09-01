@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Courier New";
+  src: url("courier-new.ttf");
+}
+
 html {
   background-color: #fff;
 }
@@ -20,7 +25,11 @@ body {
 
 .code {
   /*font: 2em normal "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;*/
-  font: 2em normal 'Courier New', Courier, monospace;
+  /*font: 2em normal "Courier New", Courier, monospace;*/
+  /*font: 2em normal "Consolas", "Monaco", monospace;*/
+  font-size: 2em;
+  font-weight: normal;
+  font-family: "Courier New", "Courier", monospace;
   color: #800000;
 }
 
@@ -69,6 +78,7 @@ a > img {
 
 section {
   margin-left: 3em;
+  display: block;
 }
 
 .hidden {
