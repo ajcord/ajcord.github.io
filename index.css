@@ -1,7 +1,22 @@
-/*@font-face {
-  font-family: "Courier New";
-  src: url("assets/courier-new.ttf");
-}*/
+@-webkit-keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
 html {
   background-color: #eee;
@@ -21,6 +36,27 @@ body {
 
 #me {
   margin: 1em 0 0 0;
+}
+
+/* The next two declarations are for browsers that support CSS animations */
+
+.cssanimations #me {
+  /* Note: The "forwards" attribute ensures that the animation freezes on the
+     last frame. */
+  -webkit-animation: fade-in forwards 1s 0.25s;
+  -moz-animation: fade-in forwards 1s 0.25s;
+  -o-animation: fade-in forwards 1s 0.25s;
+  animation: fade-in forwards 1s 0.25s;
+  opacity: 0;
+}
+
+.cssanimations #content > h2, .cssanimations #content > h5,
+.cssanimations #content > section {
+  -webkit-animation: fade-in forwards 1s 1.25s;
+  -moz-animation: fade-in forwards 1s 1.25s;
+  -o-animation: fade-in forwards 1s 1.25s;
+  animation: fade-in forwards 1s 1.25s;
+  opacity: 0;
 }
 
 .code {
@@ -142,7 +178,6 @@ p, li {
 
   @page {
     margin: 0.75in;
-    /*size: portrait;*/
     size: 8.5in 11in;
   }
 
@@ -153,7 +188,7 @@ p, li {
   }
 
   section {
-    margin-bottom: 1em;
+    margin: 0 0 1em 2em;
   }
 
   section > h2 {
