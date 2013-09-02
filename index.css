@@ -50,14 +50,14 @@ body {
   color: #ff0000;
 }
 
-.doctype {
+#doctype {
   font-size: 1.25em;
   position: absolute;
   left: 0;
   top: 0;
 }
 
-.doctype > a {
+#doctype > a {
   text-decoration: none;
 }
 
@@ -166,7 +166,28 @@ p, li {
 @media only screen and (max-device-width: 500px) {
 /*Respond to smartphones and other small screens*/
   body {
-    font-size: 22pt;
+    font-size: 28pt;
+  }
+
+  .code {
+    font-size: 2em;
+  }
+
+  .big {
+    font-size: 2.5em;
+  }
+
+  .small {
+    font-size: 1.5em;
+  }
+  
+  .tiny {
+    font-size: 1em;
+  }
+  
+  #doctype {
+    font-size: 1.5em;
+    margin: 0.5em 0;
   }
   
   section {
@@ -178,7 +199,7 @@ p, li {
   }
   
   .info > h3 {
-    margin-left: 1em;
+    margin-left: 2em;
   }
   
   #get-resume-no-print {
