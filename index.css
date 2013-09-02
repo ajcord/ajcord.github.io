@@ -165,20 +165,28 @@ p, li {
 
 @media only screen and (max-device-width: 500px) {
 /*Respond to smartphones and other small screens*/
+
   body {
-    font-size: 28pt;
+    font-size: 10pt;
+    width: auto;
+    margin: 1em;
+    padding: 0;
+  }
+  
+  #me {
+    margin: 2em 0 0 0;
   }
 
   .code {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .big {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   .small {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
   
   .tiny {
@@ -186,7 +194,7 @@ p, li {
   }
   
   #doctype {
-    font-size: 1.5em;
+    font-size: 1.25em;
     margin: 0.5em 0;
   }
   
@@ -200,6 +208,19 @@ p, li {
   
   .info > h3 {
     margin-left: 2em;
+  }
+  
+  img {
+    max-width: 90%;
+  }
+  
+  .social-icon-link {
+    margin: 0 10px 10px 0;
+  }
+
+  .social-icon-link > img {
+    width: 57px;
+    height: 57px;
   }
   
   #get-resume-no-print {
