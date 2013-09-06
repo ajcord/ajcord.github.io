@@ -60,7 +60,7 @@ $('a[href^=http]').click(function() {
       } else {
         label = 'via browser';
       }
-      _gaq.push(['_trackEvent', 'resume', 'print', label]);
+      _gaq.push(['_trackEvent', 'resume', 'printed', label]);
       printingFromLink = false;
     }
   };
