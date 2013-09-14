@@ -11,13 +11,13 @@ $('.expand').click(function() {
   if (info.css('display') == 'none') {
     $(this).text('[-]');
     //Track the expansion of the section
-    _gaq.push(['_trackEvent', $(this).parent().parent().attr('id'), 'expanded',
-        $(this).parent().attr('id')]);
+    ga('send', 'event', $(this).parent().parent().attr('id'), 'expanded',
+        $(this).parent().attr('id'));
   } else {
     $(this).text('[+]');
     //Track the collapse of the section
-    _gaq.push(['_trackEvent', $(this).parent().parent().attr('id'), 'collapsed',
-        $(this).parent().attr('id')]);
+    ga('send', 'event', $(this).parent().parent().attr('id'), 'collapsed',
+        $(this).parent().attr('id'));
   }
   //Animate the toggle with a sliding animation
   info.slideToggle(200);
@@ -35,13 +35,13 @@ $('#print-link').click(function(){
 
 //Track downloads of the PDF version of the resume
 $('#download-link').click(function() {
-  _gaq.push(['_trackEvent', 'resume', 'downloaded', 'PDF']);
+  ga('send', 'event', 'resume', 'downloaded', 'PDF');
 });
 
 //Track clicks on all outbound links
 $('a[href^=http]').click(function() {
-  _gaq.push(['_trackEvent', 'links', 'clicked',
-      $(this).text() + ' - ' + $(this).attr('href')]);
+  ga('send', 'event', 'links', 'clicked',
+      $(this).text() + ' - ' + $(this).attr('href'));
 });
 
 
@@ -60,7 +60,7 @@ $('a[href^=http]').click(function() {
       } else {
         label = 'via browser';
       }
-      _gaq.push(['_trackEvent', 'resume', 'printed', label]);
+      ga('send', 'event', 'resume', 'printed', label);
       printingFromLink = false;
     }
   };
