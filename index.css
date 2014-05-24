@@ -168,7 +168,7 @@ p, li {
   line-height: 1.5em;
 }
 
-.performance {
+.performance, .in-progress {
   font-style: italic;
 }
 
@@ -232,8 +232,7 @@ p, li {
 
   section > h2 {
     font-size: 1.25em;
-    margin-left: 1.66em;
-    margin-top: 1em;
+    margin: 1em 0 0.25em 1.66em;
   }
   
   .tag {
