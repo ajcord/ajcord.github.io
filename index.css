@@ -26,7 +26,8 @@ body {
   font: 12pt normal Helvetica, Arial, sans-serif;
   margin: auto;
   padding: 40px;
-  width: 960px;
+  padding-right: 265px;
+  width: 900px;
   color: #000;
 }
 
@@ -52,7 +53,8 @@ body {
 }
 
 .cssanimations #content > h2, .cssanimations #content > h5,
-.cssanimations #content > section {
+.cssanimations #content > section,
+.cssanimations #minimap, .cssanimations #minimap-viewport {
   -webkit-animation: fade-in forwards 1s 1s;
   -moz-animation: fade-in forwards 1s 1s;
   -o-animation: fade-in forwards 1s 1s;
@@ -94,6 +96,13 @@ body {
 .tag:after {
   content: ">";
   color: #00f;
+}
+
+.end.tag {
+  /* Disallow selection to avoid duplicate headings when copied & pasted */
+  -webkit-user-select: none; /* Still allows copying */
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .end.tag:before {
@@ -200,13 +209,50 @@ p, li {
   display: none;
 }
 
+.csstransforms #minimap-viewport {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.1);
+  left: calc(100% - 225px);
+  top: 0;
+  width: 225px;
+  height: 25%;
+  cursor: pointer;
+  z-index: 510;
+}
+
+.csstransforms #minimap {
+  -webkit-transform: scale(0.25);
+  -moz-transform: scale(0.25);
+  transform: scale(0.25);
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  transform-origin: 0 0;
+  position: fixed;
+  left: calc(100% - 225px);
+  top: 0;
+  width: 900px; /* Scales to 225px */
+  padding-top: 40px;
+  -webkit-user-select: none;
+  cursor: pointer;
+  z-index: 500;
+  min-height: 400%; /* Cover the window vertically */
+}
+
+.no-csstransforms #minimap-viewport, .no-csstransforms #minimap {
+  display: none;
+}
+
+#minimap iframe {
+  pointer-events: none; /* Prevent playing YouTube videos in the minimap */
+}
+
 @media print {
-/*Show only the resume when printing instead of the actual page*/
+/* Show only the resume when printing instead of the actual page */
   html {
     background-color: transparent;
   }
 
-  #content {
+  #content, #minimap, #minimap-viewport {
     display: none;
   }
 
@@ -224,6 +270,7 @@ p, li {
     margin: 0;
     padding: 0;
     font-size: 12pt;
+    width: 960px;
   }
 
   section {
@@ -261,8 +308,8 @@ p, li {
   }
 }
 
-@media only screen and (max-device-width: 500px) {
-/*Respond to smartphones and other small screens*/
+@media only screen and (max-width: 600px) {
+/* Respond to small screens */
 
   body {
     font-size: 10pt;
@@ -270,62 +317,79 @@ p, li {
     margin: 1em;
     padding: 0;
   }
+
+  #minimap, #minimap-viewport {
+    display: none;
+  }
   
-  #me {
+  :not(#minimap) #me {
     margin: 2em 0 0 0;
   }
 
-  .tag {
+  :not(#minimap) .tag {
     font-size: 1.5em;
   }
 
-  .big {
+  :not(#minimap) .big {
     font-size: 2em;
   }
 
-  .small {
+  :not(#minimap) .small {
     font-size: 1.25em;
   }
   
-  .tiny {
+  :not(#minimap) .tiny {
     font-size: 1em;
   }
   
-  #doctype {
+  :not(#minimap) #doctype {
     font-size: 1.25em;
     margin: 0.5em 0;
   }
   
-  section {
+  :not(#minimap) section {
     margin: 5em 0;
   }
   
-  .info, p, section > ul {
+  :not(#minimap) .info, p, section > ul {
     margin-left: 0;
   }
   
-  .info > h3 {
+  :not(#minimap) .info > h3 {
     margin-left: 2em;
   }
   
-  img {
+  :not(#minimap) img {
     max-width: 90%;
   }
   
-  .social-icon-link {
+  :not(#minimap) .social-icon-link {
     margin: 0 10px 10px 0;
   }
 
-  .social-icon-link > img {
+  :not(#minimap) .social-icon-link > img {
     width: 57px;
     height: 57px;
   }
   
-  #get-resume-no-print {
+  :not(#minimap) #get-resume-no-print {
     display: block;
   }
   
-  #get-resume-print {
+  :not(#minimap) #get-resume-print {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+/* Respond to medium screens */
+
+  #minimap, #minimap-viewport {
+    display: none;
+  }
+
+  body {
+    padding-right: 40px;
+    width: auto;
   }
 }
