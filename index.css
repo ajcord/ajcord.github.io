@@ -150,7 +150,7 @@ a > img, iframe {
   height: 0;
 }
 
-.video-container > iframe {
+.video-container > object > embed {
   width: 100%;
   height: 100%;
 }
