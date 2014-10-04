@@ -336,6 +336,11 @@ p, li {
     margin-right: 3em; /* Center the image/iframe */
   }
 
+  .video-container {
+    padding-bottom: 0;
+    height: inherit;
+  }
+
   #minimap, #minimap-viewport {
     display: none;
   }
