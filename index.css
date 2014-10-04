@@ -338,7 +338,7 @@ p, li {
 
   .video-container {
     padding-bottom: 0;
-    height: inherit;
+    height: 100%;
   }
 
   #minimap, #minimap-viewport {
