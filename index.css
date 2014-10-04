@@ -338,8 +338,12 @@ p, li {
 
   .video-container {
     padding-bottom: 0;
-    height: inherit;
-    max-height: 150px;
+    height: auto;
+  }
+
+  .video-container > iframe {
+    width: 100%;
+    height: auto;
   }
 
   #minimap, #minimap-viewport {
