@@ -144,6 +144,17 @@ a > img, iframe {
   border: 0;
 }
 
+.video-container {
+  /* Hack to make videos display in 16:9 aspect ratio at all times */
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.image-container > img, .video-container > iframe {
+  width: 100%;
+  height: 100%;
+}
+
 .tag a {
   color: inherit;
 }
@@ -317,6 +328,10 @@ p, li {
     padding: 0;
   }
 
+  .image-container, .video-container {
+    margin-right: 3em; /* Center the image/iframe */
+  }
+
   #minimap, #minimap-viewport {
     display: none;
   }
@@ -358,10 +373,6 @@ p, li {
     margin-left: 2em;
   }
   
-  :not(#minimap) img {
-    max-width: 90%;
-  }
-  
   :not(#minimap) .social-icon-link {
     margin: 0 10px 10px 0;
   }
@@ -370,7 +381,7 @@ p, li {
     width: 57px;
     height: 57px;
   }
-  
+  /*
   :not(#minimap) #get-resume-no-print {
     display: block;
   }
@@ -378,6 +389,7 @@ p, li {
   :not(#minimap) #get-resume-print {
     display: none;
   }
+  */
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
