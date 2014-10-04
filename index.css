@@ -338,7 +338,7 @@ p, li {
 
   .video-container {
     padding-bottom: 0;
-    height: auto;
+    height: 100%;
   }
 
   .video-container > iframe {
