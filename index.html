@@ -22,30 +22,41 @@
   <body>
     <div id="content">
       <!--I made this website entirely by hand in 100% valid HTML5. Check it
-      using the doctype link in the page.-->
-      <h5 id="doctype" class="tag"><a href="http://validator.w3.org/check?uri=" id="valid" title="Hand-crafted in valid HTML5" target="_blank">DOCTYPE <span class="attr">html</span></a></h5>
+      using the doctype link below.-->
+      <h5 id="doctype" class="tag"><a href="http://validator.w3.org/check?uri=referer" id="valid" title="Hand-crafted in valid HTML5" target="_blank">DOCTYPE <span class="attr">html</span></a></h5>
       <h1 class="big tag" id="me">alex_cordonnier</h1>
+
+
+
+
       <section id="about">
         <h1 class="tag">about</h1>
         <p>
-          My name is Alex Cordonnier. I'm a Computer Science major at the <a href="http://www.illinois.edu" target="_blank">University of Illinois at Urbana-Champaign</a>, hailing from scenic <a href="http://www.versaillesohio.cc" target="_blank">Versailles, Ohio</a>. I love to write programs and make websites, which I accomplish by <a href="#projects">making great projects</a>, including both software and hardware. I also enjoy working on theater lighting.
+          I'm a Computer Science major at the <a href="http://www.illinois.edu" target="_blank">University of Illinois at Urbana-Champaign</a>, hailing from scenic <a href="http://www.versaillesohio.cc" target="_blank">Versailles, Ohio</a>. I love to write programs and make websites, which I accomplish by <a href="#projects">making great projects</a>, including both software and hardware. I also enjoy working on theater lighting.
         </p>
         <h2 class="end tag">about</h2>
       </section>
+
+
+
+
       <section id="dev-skills">
         <h1 class="tag">developer_skills</h1>
         <p>I have a wide array of skills with programming, ranging from web development &amp; design to low-level firmware programming:</p>
         <ul>
-          <li>HTML, JavaScript, CSS</li>
-          <li>jQuery</li>
-          <li>Java</li>
+          <li>HTML, CSS, JavaScript, jQuery</li>
           <li>C, C++</li>
+          <li>Java</li>
           <li>Git, SVN, TFS</li>
           <li>VB.NET, VBA</li>
           <li>Z80, MIPS assembly</li>
         </ul>
         <h2 class="end tag">developer_skills</h2>
       </section>
+
+
+
+
       <section id="projects">
         <!--Note that this list is not comprehensive - far from it. There are
         literally hundreds of smaller projects and miscellaneous programs I have
@@ -65,6 +76,30 @@
           <h4><a href="http://www.youtube.com/watch?v=GSs9BV8IhDw" target="_blank" title="Watch on YouTube">Theater Demo</a></h4>
           <p class="video-container"><iframe width="640" height="360" src="http://www.youtube.com/embed/GSs9BV8IhDw" allowfullscreen></iframe></p>
           <h3 class="small end tag">dmx-84</h3>
+        </div>
+
+        <h3 id="midi-show-control-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>midi_show_control <span class="attr">link</span><span class="value">="<a href="https://github.com/ajcord/MIDI-Show-Control" target="_blank">GitHub</a>"</span></h3>
+        <div class="hidden info midi-show-control-info">
+          <p>
+            I developed the firmware for a MIDI control device for a lighting technician on Broadway. The Arduino-based device displays information on the LCD about the MIDI packets being transmitted. The packets can be blocked or passed through by toggling a button.
+          </p>
+          <h3 class="small end tag">midi_show_control</h3>
+        </div>
+
+        <h3 id="classmaster-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>classmaster <span class="attr">link</span><span class="value">="<a href="http://classmaster.web.engr.illinois.edu/index.php" target="_blank">Website</a>"</span></h3>
+        <div class="hidden info classmaster-info">
+          <p>
+            For our class project for CS 411 (Databases), my group and I made a website that tracks enrollment statistics in classes at the Univeristy of Illinois and makes recommendations on how easy or hard it is to get into the specific classes you want. The server requests data for every class once per day. As the database grows each semester, the predictions can be refined and will be able to predict when classes will fill up.
+          </p>
+          <h3 class="small end tag">classmaster</h3>
+        </div>
+
+        <h3 id="mcverilog-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>mcverilog <span class="attr">link</span><span class="value">="<a href="https://github.com/ajcord/BoilerMake2014" target="_blank">GitHub</a>"</span></h3>
+        <div class="hidden info mcverilog-info">
+          <p>
+            For the <a href="http://boilermake.org/" target="_blank">BoilerMake</a> fall 2014 hackathon, my team and I developed a Verilog-to-Minecraft "compiler." It takes code written in <a href="http://en.wikipedia.org/wiki/Verilog" target="_blank">Verilog</a> (a language that describes how circuits are connected) and generates a representation of the circuit in the popular game Minecraft using redstone logic gates.
+          </p>
+          <h3 class="small end tag">mcverilog</h3>
         </div>
         
         <h3 id="launchpage-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>launchpage <span class="attr">link</span><span class="value">="<a href="https://chrome.google.com/webstore/detail/launchpage/bkdpdcgcbkkohcelcibdenakcngkmamg" target="_blank">Chrome Web Store</a>"</span></h3>
@@ -98,20 +133,12 @@
           <p class="video-container"><iframe width="640" height="360" src="http://www.youtube.com/embed/OYRdS54XFMw?feature=player_detailpage" allowfullscreen=""></iframe></p>
           <h3 class="small end tag">eagle_project</h3>
         </div>
-        <!--
-        <h3 id="trains-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>train_game</h3>
-        <div class="hidden info trains-info">
-          <p>
-            At the beginning of my junior year of high school, I began to create an online sensory game for autistic children. It is a puzzle game designed for tablets such as the iPad. The game allows the child to manipulate color-tagd trains to match them to the corresponding tracks. When the trains are all in the correct positions, a reward animation plays. The purpose of the game is to improve fine motor skills while simultaneously entertaining and calming the child.
-          </p>
-          <p>
-            Unfortunately, because the HTML5 game is still a work-in-progress, I can't provide a link. However, once it is completed, it will be hosted on a website that tablet users can add to their home screens and run as if it was a normal app.
-          </p>
-          <h3 class="small end tag">train_game</h3>
-        </div>
-        -->
         <h2 class="end tag">projects</h2>
       </section>
+
+
+
+
       <section id="experience">
         <h1 class="tag">experience</h1>
         <h3 id="uiuc-233-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>teaching_assistant <span class="attr">at</span><span class="value">="<a href="http://cs.illinois.edu" target="_blank">University of Illinois</a>"</span></h3>
@@ -119,11 +146,12 @@
           <p><span class="tiny tag">title</span>Undergraduate Teaching Assistant, CS 233<span class="tiny end tag">title</span></p>
           <p><span class="tiny tag">time</span>January 2015 to present<span class="tiny end tag">time</span></p>
           <p><span class="tiny tag">description</span></p>
-          <p>I teach three labs in the Computer Architecture course (CS 233) and helped write the spring 2015 Spimbot competition environment.</p>
+          <p>In the Computer Architecture course in spring 2015, I taught three labs, helped write the spring 2015 Spimbot competition environment, and proctored and graded the midterm exam.</p>
           <p><a href="http://web.engr.illinois.edu/~zilles/spimbot/" target="_blank">Spimbot</a> is a competition where students program MIPS assembly for a simulated robot to execute. The spring 2015 competition involved solving word searches to acquire energy and collect stardust to grow their planet bigger than their opponent's. I primarily wrote the memory-mapped I/O interface and puzzle solution checker.</p>
           <p><span class="tiny end tag">description</span></p>
           <h3 class="small end tag">teaching_assistant</h3>
         </div>
+
         <h3 id="midmark-3-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>intern <span class="attr">at</span><span class="value">="<a href="http://midmark.com" target="_blank">Midmark Corporation</a>"</span></h3>
         <div class="hidden info midmark-3-info">
           <p><span class="tiny tag">title</span>Web Development Intern<span class="tiny end tag">title</span></p>
@@ -133,6 +161,7 @@
           <p><span class="tiny end tag">description</span></p>
           <h3 class="small end tag">intern</h3>
         </div>
+
         <h3 id="midmark-2-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>co-op <span class="attr">at</span><span class="value">="<a href="http://midmark.com" target="_blank">Midmark Corporation</a>"</span></h3>
         <div class="hidden info midmark-2-info">
           <p><span class="tiny tag">title</span>Software Engineering Co-op<span class="tiny end tag">title</span></p>
@@ -150,6 +179,7 @@
           <p><span class="tiny end tag">description</span></p>
           <h3 class="small end tag">co-op</h3>
         </div>
+
         <h3 id="midmark-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>intern <span class="attr">at</span><span class="value">="<a href="http://midmark.com" target="_blank">Midmark Corporation</a>"</span></h3>
         <div class="hidden info midmark-info">
           <p><span class="tiny tag">title</span>E-Marketing Intern<span class="tiny end tag">title</span></p>
@@ -166,19 +196,17 @@
           <p><span class="tiny end tag">description</span></p>
           <h3 class="small end tag">intern</h3>
         </div>
+
         <h3 id="plyhammer-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>webmaster <span class="attr">at</span><span class="value">="<a href="http://www.plyhammersparts.biz" target="_blank">Plyhammer's Parts, LLC</a>"</span></h3>
         <div class="hidden info plyhammer-info">
           <p><span class="tiny tag">title</span>Webmaster/Web Developer<span class="tiny end tag">title</span></p>
           <p><span class="tiny tag">time</span>February 2011 to April 2014<span class="tiny end tag">time</span></p>
           <p><span class="tiny tag">description</span></p>
           <p>I built, set up, and maintained an online store for a local client who sells Porsche parts. It was hosted at plyhammersparts.biz, and later at plyhammersparts.com. I also set up and managed social media profiles such as <a href="https://www.facebook.com/plyhammer" target="_blank">Facebook</a>, <a href="https://twitter.com/plyhammer" target="_blank">Twitter</a>, and <a href="https://youtube.com/plyhammersparts" target="_blank">YouTube</a> for the company.</p>
-          <h4>Background</h4>
-          <p>In February 2011, my former teacher and cross country coach, Mark Pleiman, asked me if I knew how to make a website. He told me he was starting a business to buy old Porsches and sell the parts, and he wanted to sell the parts on a more professional website than eBay. He gave me his business card and told me that he would pay me if I could build a website for him. I had been coding in HTML for years, but I had never created a live website before.</p>
-          <p>I searched around to find the various options for shopping cart software, and the one I chose to use was <a href="http://www.zen-cart.com/" target="_blank">Zen Cart</a>. I then downloaded a copy of Zen Cart and went to work modifying it to suit my client's needs. I mostly changed the stylesheets to match the style of the business card, but I also needed to modify some of the PHP code to make the website work as my client wanted. However, since I didn't know any PHP, I researched about it until I had enough skills to tackle the website. I have since researched more about PHP, but I still have a lot to learn about it.</p>
-          <p>Once the website was ready, I set up hosting and registered the domain for my client. He trusts me with all the information I need to set up automatic bill payment for the hosting and registration. After I set up the main website, I also set up a hosted WordPress blog as well as all of the social media accounts I listed above. Once everything was in place, I spent a day teaching him and his wife how to use the software to manage the online store. In 2012, the website averaged 11,390 requests per month.</p>
           <p><span class="tiny end tag">description</span></p>
           <h3 class="small end tag">webmaster</h3>
         </div>
+
         <h3 id="track-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>timer <span class="attr">at</span><span class="value">="Versailles Athletic Department"</span></h3>
         <div class="hidden info track-info">
           <p><span class="tiny tag">title</span>Electronic Track Timer<span class="tiny end tag">title</span></p>
@@ -196,6 +224,7 @@
           <p><span class="tiny end tag">description</span></p>
           <h3 class="small end tag">timer</h3>
         </div>
+
         <h3 id="vpac-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>lighting_tech <span class="attr">at</span><span class="value">="<a href="http://goo.gl/maps/kLEIv" title="Google Maps" target="_blank">Versailles Performing Arts Center</a>"</span></h3>
         <div class="hidden info vpac-info">
           <p><span class="tiny tag">title</span>Senior Lighting Coordinator<span class="tiny end tag">title</span></p>
@@ -223,13 +252,18 @@
           <p><span class="tiny end tag">description</span></p>
           <h3 class="small end tag">lighting_tech</h3>
         </div>
+
         <h2 class="end tag">experience</h2>
       </section>
+
+
+
+
       <section id="education">
         <h1 class="tag">education</h1>
         <h3 id="illinois-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>undergrad <span class="attr">at</span><span class="value">="<a href="http://www.illinois.edu" target="_blank">University of Illinois at Urbana&#8209;Champaign</a>"</span></h3>
         <div class="hidden info illinois-info">
-          <p><span class="tiny tag">degree</span>Bachelor of Science of Computer Science<span class="tiny end tag">degree</span></p>
+          <p><span class="tiny tag">degree</span>Bachelor of Science in Computer Science<span class="tiny end tag">degree</span></p>
           <p><span class="tiny tag">time</span>August 2013 to present<span class="tiny end tag">time</span></p>
           <p><span class="tiny tag">graduation</span>May 2017<span class="tiny end tag">graduation</span></p>
           <p><span class="tiny tag">GPA</span>3.62 of 4.00<span class="tiny end tag">GPA</span></p>
@@ -248,11 +282,11 @@
             <li>CS 241: System Programming &mdash; <span class="in-progress">(in progress)</span></li>
             <li>CS 357: Numerical Methods &mdash; <span class="in-progress">(in progress)</span></li>
             <li>CS 411: Database Systems &mdash; <span class="in-progress">(in progress)</span></li>
-            <li>MATH 415: Linear Algebra &mdash; B+</li>
           </ul>
           <p><span class="tiny end tag">classes</span></p>
           <h3 class="small end tag">undergrad</h3>
         </div>
+
         <h3 id="vhs-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>high_school <span class="attr">at</span><span class="value">="<a href="http://hs.versailles.k12.oh.us" target="_blank">Versailles High School</a>"</span></h3>
         <div class="hidden info vhs-info">
           <p><span class="tiny tag">time</span>August 2009 to May 2013<span class="tiny end tag">time</span></p>
@@ -300,6 +334,10 @@
         </div>
         <h2 class="end tag">education</h2>
       </section>
+
+
+
+
       <section id="resume">
         <h1 class="tag">r&eacute;sum&eacute;</h1>
         <p id="get-resume-print">Want my r&eacute;sum&eacute;? Just <a href="javascript:void(0);" id="print-link" title="My resume will print instead of the actual page, thanks to the CSS print media query.">print this page</a> if you're on a modern browser. You can also <a href="assets/Resume-Alex-Cordonnier.pdf" id="download-link" target="_blank">download the PDF</a>.</p>
@@ -311,7 +349,6 @@
         <p>
           <a href="https://www.facebook.com/alexcordonnier" class="social-icon-link" target="_blank" title="Facebook"><img src="assets/images/fb.png" alt="Facebook"></a>
           <a href="https://www.twitter.com/alexjcord" class="social-icon-link" target="_blank" title="Twitter"><img src="assets/images/twit.png" alt="Twitter"></a>
-          <!--<a href="https://www.google.com/+AlexCordonnier" class="social-icon-link" target="_blank" title="Google+"><img src="assets/images/google.png" alt="Google+"></a>-->
           <a href="https://www.linkedin.com/in/alexcordonnier" class="social-icon-link" target="_blank" title="LinkedIn"><img src="assets/images/linked.png" alt="LinkedIn"></a>
           <a href="https://www.github.com/ajcord" class="social-icon-link" target="_blank" title="GitHub"><img src="assets/images/github.png" alt="GitHub"></a>
           <a href="mailto:alexjcord@gmail.com" class="social-icon-link" title="Email"><img src="assets/images/mail.png" alt="Email"></a>
@@ -330,10 +367,9 @@
       <section>
         <h1 class="small tag">skills</h1>
         <ul>
-          <li>HTML, JavaScript, CSS &mdash; advanced</li>
-          <li>jQuery &mdash; intermediate</li>
-          <li>Java &mdash; intermediate</li>
+          <li>HTML, CSS, JavaScript, jQuery &mdash; advanced</li>
           <li>C, C++ &mdash; intermediate</li>
+          <li>Java &mdash; intermediate</li>
           <li>Git, SVN, TFS &mdash; intermediate</li>
           <li>VB.NET, VBA &mdash; basic</li>
         </ul>
@@ -343,26 +379,33 @@
         <h2>Bachelor of Science in CS, University of Illinois at Urbana-Champaign</h2>
         <p>
           Graduation: May 2017 &mdash; GPA: 3.62 of 4.00<br>
-          James Scholar Honors Program: Fall '13 to present, Dean's List: Spring '14<br>
+          James Scholar Honors Program: Fall '13 to present, Dean's List: Spring '14, Fall '14<br>
         </p>
       </section>
       <section>
         <h1 class="small tag">experience</h1>
+        <h2>Jan 2015 &ndash; present: Undergraduate TA at University of Illinois</h2>
+        <ul>
+          <li>Taught three lab sections of Computer Architecture</li>
+          <li>Helped develop Spimbot competition's I/O interface</li>
+        </ul>
+
+        <h2>Sep 2014 &ndash; Jan 2015: Web Development Intern at Midmark</h2>
+        <ul>
+          <li>Developed new HTML5 design tool web app for Medical division</li>
+        </ul>
+
         <h2>May 2014 &ndash; Aug 2014: Software Engineering Co-op at Midmark</h2>
         <ul>
           <li>Developed initialization &amp; hardware interface code for a new PC board</li>
           <li>Created macros to automatically update SharePoint, saving 7 person-hours per year</li>
-          <li>Fixed longstanding bugs and refactored code in USB interface board</li>
           <li>Wrote unit tests and test protocols to verify new software releases</li>
-          <li>Wrote documentation for a complex product collaboratively with a subsidiary</li>
         </ul>
         
         <h2>May 2013 &ndash; May 2014: E-Marketing Intern at Midmark</h2>
         <ul>
           <li>Developed HTML5 versions of 3 Flash color selectors, including deep mobile integration</li>
-          <li>Developed new color selector from scratch, especially for use at tradeshows</li>
-          <li>Developed HTML5 versions of 3 interactive Flash banners for mobile support</li>
-          <li>Made media-rich promotional website available offline for sales representatives' tablets</li>
+          <li>Developed new HTML5 color selector from scratch for Dental division</li>
         </ul>
       </section>
       <section>
@@ -370,7 +413,6 @@
         <h2>DMX-84: programming theater lights from a calculator (Arduino, C/C++)</h2>
         <ul>
           <li>Built device to enable graphing calculators to program and run theater &amp; DJ lights</li>
-          <li>Project cost $50, compared to $170 for commercial PC equivalent</li>
           <li>Featured on hackaday.com on Aug 3, 2014</li>
         </ul>
         
