@@ -297,6 +297,15 @@ p, li {
   li {
     line-height: 1.2em;
   }
+
+  #skills {
+    float: right;
+    max-width: 200pt;
+  }
+
+  #skills .tag {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {
