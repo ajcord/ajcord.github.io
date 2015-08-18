@@ -39,28 +39,6 @@ body {
   margin: 1em 0 0 0;
 }
 
-/* The next two declarations are for browsers that support CSS animations */
-
-.cssanimations #me {
-  /* The "forwards" attribute ensures that the animation freezes on
-     the last frame. */
-  -webkit-animation: fade-in forwards 1s 0.25s;
-  -moz-animation: fade-in forwards 1s 0.25s;
-  -o-animation: fade-in forwards 1s 0.25s;
-  animation: fade-in forwards 1s 0.25s;
-  opacity: 0;
-}
-
-.cssanimations #content > h2, .cssanimations #content > h5,
-.cssanimations #content > section,
-.cssanimations #minimap, .cssanimations #minimap-viewport {
-  -webkit-animation: fade-in forwards 1s 1s;
-  -moz-animation: fade-in forwards 1s 1s;
-  -o-animation: fade-in forwards 1s 1s;
-  animation: fade-in forwards 1s 1s;
-  opacity: 0;
-}
-
 .tag {
   font-size: 2.5em;
   font-weight: normal;
@@ -87,6 +65,11 @@ body {
   font-size: 1em;
 }
 
+.tiny.tag:after {
+  content: ">\a";
+  white-space: pre;
+}
+
 .tag:before {
   content: "<";
   color: #00f;
@@ -102,6 +85,7 @@ body {
   -webkit-user-select: none; /* Still allows copying */
   -moz-user-select: none;
   -ms-user-select: none;
+  display: none;
 }
 
 .end.tag:before {
@@ -157,7 +141,7 @@ a > img, iframe {
 }
 
 section {
-  margin: 8em 0 12em 0;
+  margin: 6em 0 6em 0;
 }
 
 section > ul {

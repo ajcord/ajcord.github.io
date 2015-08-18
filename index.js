@@ -48,15 +48,6 @@ $("a[href^=http]").click(function() {
 });
 
 
-//Prevent the animation if the page is scrolled past the main heading
-if ($(window).scrollTop() > 150) {
-  $("*").css({
-    animation: "none",
-    opacity: "1"
-  });
-}
-
-
 //Set up print logging
 (function() {
   var afterPrint = function() {
