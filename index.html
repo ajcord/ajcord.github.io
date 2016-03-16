@@ -42,10 +42,10 @@
 
       <section id="dev-skills">
         <h1 class="tag">developer_skills</h1>
-        <p>I have a wide array of skills with programming, ranging from web development &amp; design to low-level firmware programming:</p>
+        <p>I have a wide array of skills with programming, ranging from web development &amp; design to embedded software engineering:</p>
         <ul>
-          <li>HTML, CSS, JavaScript, jQuery</li>
           <li>C, C++</li>
+          <li>HTML, CSS, JavaScript, jQuery</li>
           <li>Java</li>
           <li>Git, SVN, TFS</li>
           <li>VB.NET, VBA</li>
@@ -62,6 +62,48 @@
         literally hundreds of smaller projects and miscellaneous programs I have
         written that I didn't list here. -->
         <h1 class="tag">projects</h1>
+
+        <h3 id="wireless-lights-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>wireless_lights <span class="attr">link</span><span class="value">="<a href="https://github.com/SIGMusic/tonal-lightfield">GitHub</a>"</span></h3>
+        <div class="hidden info wireless-lights-info">
+          <p>
+            As a member of SIGMusic, I have worked on two versions of a wireless lighting project that has been demonstrated at <a href="http://eoh.ec.uiuc.edu/">Engineering Open House</a>. The first version, in 2015, was to control eight RGB LED floodlights via Bluetooth-connected Arduino Pro Minis. It was controlled by a websocket server written in Python. While this setup mostly worked, we decided to improve it for 2016.
+          </p>
+          <p>
+            The second version used the same RGB LED floodlights, but with more suitable hardware and software. I designed and built an improved logic board for the lights and used nRF24L01+ radio modules instead of Bluetooth. I wrote a frequency hopping algorithm in addition to a multiprocess websocket server in C++.
+          </p>
+          <p>
+            In the future, I plan to improve the radio network reliability and the server's performance. SIGMusic's goal is to eventually write several applications that can make use of the lights and to make them into an art installation.
+          </p>
+          <h3 class="small end tag">wireless_lights</h3>
+        </div>
+
+        <h3 id="canitakethisclass-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>can_i_take_this_class <span class="attr">link</span><span class="value">="<a href="http://www.canitakethisclass.com">Website</a>"</span></h3>
+        <div class="hidden info canitakethisclass-info">
+          <p>
+            For our class project for CS 411 (Databases), my group and I made a website called ClassMaster that tracks enrollment statistics in classes at the Univeristy of Illinois. The server requests data for every class once per day.
+          </p>
+          <p>
+            Once the database had enough data to make informed predictions, I added the ability to predict future availability from past semesters. I also rewrote the codebase to make it more secure and maintainable. It is published at <a href="http://www.canitakethisclass.com">canitakethisclass.com</a>.
+          </p>
+          <h3 class="small end tag">can_i_take_this_class</h3>
+        </div>
+
+        <h3 id="midi-show-control-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>midi_show_control <span class="attr">link</span><span class="value">="<a href="https://github.com/ajcord/MIDI-Show-Control">GitHub</a>"</span></h3>
+        <div class="hidden info midi-show-control-info">
+          <p>
+            A lighting technician on Broadway asked me to develop the firmware for a MIDI control device due to my experience with DMX-84. The Arduino-based device displays information on the LCD about the MIDI packets being transmitted. The packets can be blocked or passed through by toggling a button.
+          </p>
+          <h3 class="small end tag">midi_show_control</h3>
+        </div>
+
+        <h3 id="mcverilog-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>mcverilog <span class="attr">link</span><span class="value">="<a href="https://github.com/ajcord/BoilerMake2014">GitHub</a>"</span></h3>
+        <div class="hidden info mcverilog-info">
+          <p>
+            For the <a href="http://boilermake.org/">BoilerMake</a> fall 2014 hackathon, my team and I developed a Verilog-to-Minecraft "compiler." It takes code written in <a href="http://en.wikipedia.org/wiki/Verilog">Verilog</a> (a language that describes how circuits are connected) and generates a representation of the circuit in the popular game Minecraft using redstone logic gates.
+          </p>
+          <h3 class="small end tag">mcverilog</h3>
+        </div>
+
         <h3 id="dmx84-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>dmx-84 <span class="attr">link</span><span class="value">="<a href="http://hackaday.io/project/2170-DMX-84%3A-Calculator-Controlled-Lights">Hackaday Projects</a>"</span></h3>
         <div class="hidden info dmx84-info">
           <p>
@@ -76,33 +118,6 @@
           <h4><a href="http://www.youtube.com/watch?v=GSs9BV8IhDw" title="Watch on YouTube">Theater Demo</a></h4>
           <p class="video-container"><iframe width="640" height="360" src="http://www.youtube.com/embed/GSs9BV8IhDw" allowfullscreen></iframe></p>
           <h3 class="small end tag">dmx-84</h3>
-        </div>
-
-        <h3 id="midi-show-control-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>midi_show_control <span class="attr">link</span><span class="value">="<a href="https://github.com/ajcord/MIDI-Show-Control">GitHub</a>"</span></h3>
-        <div class="hidden info midi-show-control-info">
-          <p>
-            I developed the firmware for a MIDI control device for a lighting technician on Broadway. The Arduino-based device displays information on the LCD about the MIDI packets being transmitted. The packets can be blocked or passed through by toggling a button.
-          </p>
-          <h3 class="small end tag">midi_show_control</h3>
-        </div>
-
-        <h3 id="canitakethisclass-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>can_i_take_this_class <span class="attr">link</span><span class="value">="<a href="http://www.canitakethisclass.com">Website</a>"</span></h3>
-        <div class="hidden info canitakethisclass-info">
-          <p>
-            For our class project for CS 411 (Databases), my group and I made a website called ClassMaster that tracks enrollment statistics in classes at the Univeristy of Illinois. The server requests data for every class once per day.
-          </p>
-          <p>
-            Once the database had enough data to make informed predictions, I added the ability to predict future availability from past semesters. I also rewrote the codebase to make it more secure and maintainable. It is published at <a href="http://www.canitakethisclass.com">canitakethisclass.com</a>.
-          </p>
-          <h3 class="small end tag">can_i_take_this_class</h3>
-        </div>
-
-        <h3 id="mcverilog-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>mcverilog <span class="attr">link</span><span class="value">="<a href="https://github.com/ajcord/BoilerMake2014">GitHub</a>"</span></h3>
-        <div class="hidden info mcverilog-info">
-          <p>
-            For the <a href="http://boilermake.org/">BoilerMake</a> fall 2014 hackathon, my team and I developed a Verilog-to-Minecraft "compiler." It takes code written in <a href="http://en.wikipedia.org/wiki/Verilog">Verilog</a> (a language that describes how circuits are connected) and generates a representation of the circuit in the popular game Minecraft using redstone logic gates.
-          </p>
-          <h3 class="small end tag">mcverilog</h3>
         </div>
         
         <h3 id="launchpage-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>launchpage <span class="attr">link</span><span class="value">="<a href="https://chrome.google.com/webstore/detail/launchpage/bkdpdcgcbkkohcelcibdenakcngkmamg">Chrome Web Store</a>"</span></h3>
