@@ -298,15 +298,20 @@ p, li {
   }
 
   section > h2 {
-    font-size: 1.15em;
-    margin: 0 0 -0.5em 1em;
+    font-size: 1.25em;
+    margin: 0 0 0.25em 0.5em;
   }
-  
+
+  section > h3 {
+    font-size: 1.15em;
+    margin: 0 0 0.25em 1.5em;
+  }
+
   .tag {
     font-size: 1.75em;
     margin: 0.5em 0;
   }
-  
+
   .small {
     font-size: 1.35em;
   }
@@ -314,14 +319,18 @@ p, li {
   .subheading {
     margin-left: 1.25em;
   }
-  
-  p {
+
+  section > ul, section > p {
+    margin: -0.15em 0 0.75em 0;
+  }
+
+  #skills > ul {
+      margin-top: 0.5em;
+  }
+
+  section > p {
     margin-left: 1.25em;
     line-height: 1.25em;
-  }
-  
-  section > ul {
-    margin-left: 0;
   }
 
   li {
@@ -365,7 +374,7 @@ p, li {
   #minimap, #minimap-viewport {
     display: none;
   }
-  
+
   :not(#minimap) #me {
     margin: 2em 0 0 0;
   }
@@ -381,28 +390,28 @@ p, li {
   :not(#minimap) .small {
     font-size: 1.25em;
   }
-  
+
   :not(#minimap) .tiny {
     font-size: 1em;
   }
-  
+
   :not(#minimap) #doctype {
     font-size: 1.25em;
     margin: 0.5em 0;
   }
-  
+
   :not(#minimap) section {
     margin: 5em 0;
   }
-  
+
   :not(#minimap) .info, p, section > ul {
     margin-left: 0;
   }
-  
+
   :not(#minimap) .info > h3 {
     margin-left: 2em;
   }
-  
+
   :not(#minimap) .social-icon-link {
     margin: 0 10px 10px 0;
   }
@@ -415,7 +424,7 @@ p, li {
   :not(#minimap) #get-resume-no-print {
     display: block;
   }
-  
+
   :not(#minimap) #get-resume-print {
     display: none;
   }

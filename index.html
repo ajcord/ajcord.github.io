@@ -32,7 +32,7 @@
       <section id="about">
         <h1 class="tag">about</h1>
         <p>
-          I'm a Computer Science graduate of the <a href="http://www.illinois.edu">University of Illinois at Urbana-Champaign</a>, hailing from scenic <a href="http://www.versaillesohio.cc">Versailles, Ohio</a>. I love to write programs and make websites, which I accomplish by making <a href="#projects">interesting projects</a>, including both software and hardware. I also enjoy working on theater lighting.
+          I'm a software engineer at <a href="https://www.apple.com">Apple</a> and a computer science alumnus of the <a href="http://www.illinois.edu">University of Illinois</a>. I enjoy designing, building, and programming embedded devices. I also enjoy working on theater lighting.
         </p>
         <h2 class="end tag">about</h2>
       </section>
@@ -46,16 +46,22 @@
         written that I didn't list here. -->
         <h1 class="tag">projects</h1>
 
+        <h3 id="grand-piano-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>grand_piano <span class="attr">link</span><span class="value">="<a href="https://github.com/SIGMusic/Grand-Piano">GitHub</a>"</span></h3>
+        <div class="hidden info grand-piano-info">
+          <p>
+            In SIGMusic, I led the design and construction of a giant MIDI piano that we demonstrated at <a href="http://eoh.ec.uiuc.edu/">Engineering Open House</a>. It consisted of an octave of plastic keys, each approximately 1 foot by 4 feet, which could be "played" by stepping on them. The notes were sent over MIDI to a computer to be synthesized as part of a Guitar Hero-style game. Each key contained force detection circuitry as well as LED strips to visually indicate the key press.
+          </p>
+          <p class="image-container"><img src="assets/images/piano.jpg" alt="Picture of grand piano"></p>
+          <h3 class="small end tag">wireless_lights</h3>
+        </div>
+
         <h3 id="wireless-lights-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>wireless_lights <span class="attr">link</span><span class="value">="<a href="https://github.com/SIGMusic/tonal-lightfield">GitHub</a>"</span></h3>
         <div class="hidden info wireless-lights-info">
           <p>
-            As a member of SIGMusic, I have worked on two versions of a wireless lighting project that has been demonstrated at <a href="http://eoh.ec.uiuc.edu/">Engineering Open House</a>. The first version, in 2015, was to control eight RGB LED floodlights via Bluetooth-connected Arduino Pro Minis. It was controlled by a websocket server written in Python. While this setup mostly worked, we decided to improve it for 2016.
+            As a member of SIGMusic, I worked on two versions of a wireless lighting project that has been demonstrated at <a href="http://eoh.ec.uiuc.edu/">Engineering Open House</a>. The first version, in 2015, was to control eight RGB LED floodlights via Bluetooth-connected Arduino Pro Minis. It was controlled by a websocket server written in Python. While this setup mostly worked, we decided to improve it for 2016.
           </p>
           <p>
             The second version used the same RGB LED floodlights, but with more suitable hardware and software. I designed and built an improved logic board for the lights and used nRF24L01+ radio modules instead of Bluetooth. I wrote a frequency hopping algorithm in addition to a multiprocess websocket server in C++.
-          </p>
-          <p>
-            In the future, I plan to improve the radio network reliability and the server's performance. SIGMusic's goal is to eventually write several applications that can make use of the lights and to make them into an art installation.
           </p>
           <h3 class="small end tag">wireless_lights</h3>
         </div>
@@ -63,7 +69,7 @@
         <h3 id="canitakethisclass-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>can_i_take_this_class <span class="attr">link</span><span class="value">="<a href="http://www.canitakethisclass.com">Website</a>"</span></h3>
         <div class="hidden info canitakethisclass-info">
           <p>
-            For our class project for CS 411 (Databases), my group and I made a website called ClassMaster that tracks enrollment statistics in classes at the Univeristy of Illinois. The server requests data for every class once per day.
+            For our class project for CS 411 (Databases), my group and I made a website called ClassMaster that tracks enrollment statistics in classes at the University of Illinois. The server requests data for every class once per day.
           </p>
           <p>
             Once the database had enough data to make informed predictions, I added the ability to predict future availability from past semesters. I also rewrote the codebase to make it more secure and maintainable. It is published at <a href="http://www.canitakethisclass.com">canitakethisclass.com</a>.
@@ -74,7 +80,7 @@
         <h3 id="midi-show-control-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>midi_show_control <span class="attr">link</span><span class="value">="<a href="https://github.com/ajcord/MIDI-Show-Control">GitHub</a>"</span></h3>
         <div class="hidden info midi-show-control-info">
           <p>
-            A lighting technician on Broadway asked me to develop the firmware for a MIDI control device due to my experience with DMX-84. The Arduino-based device displays information on the LCD about the MIDI packets being transmitted. The packets can be blocked or passed through by toggling a button.
+            I developed the firmware for a MIDI control device for a lighting technician on Broadway. The Arduino-based device displays information on the LCD about the MIDI packets being transmitted. The packets can be blocked or passed through by toggling a button.
           </p>
           <h3 class="small end tag">midi_show_control</h3>
         </div>
@@ -93,23 +99,17 @@
             In February 2013, I started designing a peripheral for my TI-84 graphing calculator that would allow it to run theater lights over the DMX protocol. The idea is that the calculator sends changes in channel values to an Arduino, which processes the new channel value(s) while also transmitting DMX packets 44 times per second. The adapter is designed to be compatible with all calculators that can send data over the standard TI link port, which encompasses nearly all TI graphing calculators. I demonstrated the project at Engineering Open House 2014 using motorized DJ lights.
           </p>
           <p>
-             The project is available on <a href="https://www.github.com/ajcord/DATA-Project">GitHub</a> and <a href="http://hackaday.io/project/2170-DMX-84%3A-Calculator-Controlled-Lights">Hackaday.io</a>. It was <a href="http://hackaday.com/2014/08/03/thp-entry-a-theatrical-lighting-controller-powered-by-a-calculator/">featured on Hackaday</a> on August 3, 2014.
+             The project is available on <a href="https://www.github.com/ajcord/DATA-Project">GitHub</a> and <a href="http://hackaday.io/project/2170-DMX-84%3A-Calculator-Controlled-Lights">Hackaday.io</a>. It was <a href="http://hackaday.com/2014/08/03/thp-entry-a-theatrical-lighting-controller-powered-by-a-calculator/">featured on Hackaday</a> on August 3, 2014. Several videos about the project are available on <a href="https://www.youtube.com/playlist?list=PLlO3h9nk0Mby0m-tr9vq_gIgWXpbRNCg-">YouTube</a>.
           </p>
           <p class="image-container"><img src="assets/images/dmx-84.jpg" alt="Picture of DMX-84 adapter"></p>
-          <h4><a href="http://www.youtube.com/watch?v=1eOtrI6Eg1w" title="Watch on YouTube">Overview</a></h4>
-          <p class="video-container"><iframe width="640" height="360" src="http://www.youtube.com/embed/1eOtrI6Eg1w" allowfullscreen></iframe></p>
-          <h4><a href="http://www.youtube.com/watch?v=GSs9BV8IhDw" title="Watch on YouTube">Theater Demo</a></h4>
-          <p class="video-container"><iframe width="640" height="360" src="http://www.youtube.com/embed/GSs9BV8IhDw" allowfullscreen></iframe></p>
           <h3 class="small end tag">dmx-84</h3>
         </div>
 
         <h3 id="launchpage-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>launchpage <span class="attr">link</span><span class="value">="<a href="https://chrome.google.com/webstore/detail/launchpage/bkdpdcgcbkkohcelcibdenakcngkmamg">Chrome Web Store</a>"</span></h3>
         <div class="hidden info launchpage-info">
           <p>
-            In August 2011, I began work on an extension for Google Chrome to add a home screen of apps to the new tab page. In the summer of 2012, I finally published version 1.0 of Launchpage. I later published version 1.1, adding the ability to save any website to the home screen. In August 2015, I published version 2.0, making Launchpage follow Material Design principles, and made Launchpage <a href="https://github.com/ajcord/Launchpage">open source</a>. Below is a screenshot and a link to the published extension on the Chrome Web Store. The link includes more screenshots and a more detailed description of its features.
+            In August 2011, I began work on an extension for Google Chrome to add a home screen of apps to the new tab page. In the summer of 2012, I finally published version 1.0 of Launchpage. I later published version 1.1, adding the ability to save any website to the home screen. In August 2015, I published version 2.0, making Launchpage follow Material Design principles, and made Launchpage <a href="https://github.com/ajcord/Launchpage">open source</a>.
           </p>
-          <h4><a href="https://chrome.google.com/webstore/detail/launchpage/bkdpdcgcbkkohcelcibdenakcngkmamg" title="Chrome Web Store">Launchpage - Chrome Web Store</a></h4>
-          <p class="image-container"><img src="assets/images/launchpage.png" alt="Launchpage screenshot"></p>
           <h3 class="small end tag">launchpage</h3>
         </div>
 
@@ -150,9 +150,19 @@
       <section id="experience">
         <h1 class="tag">experience</h1>
 
+        <h3 id="apple-3-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>software_engineer <span class="attr">at</span><span class="value">="<a href="http://apple.com">Apple</a>"</span></h3>
+        <div class="hidden info apple-3-info">
+          <p><span class="tiny tag">title</span>Core OS Engineer<span class="tiny end tag">title</span></p>
+          <p><span class="tiny tag">time</span>July 2017 to present<span class="tiny end tag">time</span></p>
+          <p><span class="tiny tag">description</span>
+          Bring up new embedded devices and platforms, including iPhone, iPad, Apple Watch, and others
+          <p><span class="tiny end tag">description</span></p>
+          <h3 class="small end tag">software_engineer</h3>
+        </div>
+
         <h3 id="apple-2-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>intern <span class="attr">at</span><span class="value">="<a href="http://apple.com">Apple</a>"</span></h3>
         <div class="hidden info apple-2-info">
-          <p><span class="tiny tag">title</span>Software Engineering Intern<span class="tiny end tag">title</span></p>
+          <p><span class="tiny tag">title</span>Core OS Intern<span class="tiny end tag">title</span></p>
           <p><span class="tiny tag">time</span>May 2016 to August 2016<span class="tiny end tag">time</span></p>
           <p><span class="tiny tag">description</span>
           I developed significant portions of the secure boot ROM for a new SoC architecture.</p>
@@ -162,7 +172,7 @@
 
         <h3 id="apple-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>intern <span class="attr">at</span><span class="value">="<a href="http://apple.com">Apple</a>"</span></h3>
         <div class="hidden info apple-info">
-          <p><span class="tiny tag">title</span>Software Engineering Intern<span class="tiny end tag">title</span></p>
+          <p><span class="tiny tag">title</span>Core OS Intern<span class="tiny end tag">title</span></p>
           <p><span class="tiny tag">time</span>May 2015 to August 2015<span class="tiny end tag">time</span></p>
           <p><span class="tiny tag">description</span>
           I ported a software DMA coprocessor to run on an off-the-shelf RTOS instead of its original firmware.</p>
@@ -254,7 +264,7 @@
           <p><span class="tiny tag">honors</span></p>
           <ul>
             <li>James Scholar</li>
-            <li>Dean's List: Spring '14, Fall '14, Spring '16, Fall '16</li>
+            <li>Dean's List: Spring '14, Fall '14, Spring '16, Fall '16, Spring '17</li>
           </ul>
           <p><span class="tiny end tag">honors</span></p>
           <p><span class="tiny tag">selected_coursework</span></p>
@@ -320,39 +330,47 @@
         <p>
           GPA: 3.66<br>
           James Scholar<br>
-          Dean's List: Spring '14, Fall '14, Spring '16, Fall '16<br>
+          Dean's List: Spring '14, Fall '14, Spring '16, Fall '16, Spring '17<br>
         </p>
       </section>
       <section>
         <h1 class="small tag">experience</h1>
 
-        <h2>May 2016 &ndash; Aug 2016: Software Engineering Intern at Apple</h2>
+        <h2>Apple</h2>
+        <h3>July 2017 &ndash; present: Core OS Engineer</h3>
+        <ul>
+            <li>Bring up new embedded devices &amp; platforms, including iPhone, iPad, Apple Watch, &amp; others</li>
+        </ul>
+
+        <h3>May 2016 &ndash; Aug 2016: Core OS Intern</h3>
         <ul>
           <li>Developed significant portions of the secure boot ROM for a new SoC architecture</li>
         </ul>
 
-        <h2>May 2015 &ndash; Aug 2015: Software Engineering Intern at Apple</h2>
+        <h3>May 2015 &ndash; Aug 2015: Core OS Intern</h3>
         <ul>
-          <li>Ported a software DMA coprocessor to run on an off-the-shelf RTOS instead of its original firmware</li>
+          <li>Ported a DMA coprocessor to run on an off-the-shelf RTOS instead of its original firmware</li>
         </ul>
 
-        <h2>Jan 2015 &ndash; May 2017: Course Assistant at University of Illinois</h2>
+        <h2>University of Illinois</h2>
+        <h3>Jan 2015 &ndash; May 2017: Course Assistant</h3>
         <ul>
           <li>Taught 11 labs &amp; a discussion, proctored, and helped develop semester contest</li>
         </ul>
 
-        <h2>Sep 2014 &ndash; Jan 2015: Web Development Intern at Midmark</h2>
+        <h2>Midmark</h2>
+        <h3>Sep 2014 &ndash; Jan 2015: Web Development Intern</h3>
         <ul>
           <li>Developed new HTML5 design tool web app</li>
         </ul>
 
-        <h2>May 2014 &ndash; Aug 2014: Software Engineering Co-op at Midmark</h2>
+        <h3>May 2014 &ndash; Aug 2014: Software Engineering Co-op</h3>
         <ul>
           <li>Developed initialization &amp; hardware interface code for a new PCB</li>
           <li>Wrote unit tests and test protocols to verify new software releases</li>
         </ul>
 
-        <h2>May 2013 &ndash; May 2014: E-Marketing Intern at Midmark</h2>
+        <h3>May 2013 &ndash; May 2014: E-Marketing Intern</h3>
         <ul>
           <li>Rewrote 3 Flash-based web apps in HTML5, including mobile integration</li>
           <li>Developed new HTML5 web app</li>
