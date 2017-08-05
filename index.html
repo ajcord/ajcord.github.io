@@ -51,19 +51,33 @@
           <p>
             In SIGMusic, I led the design and construction of a giant MIDI piano that we demonstrated at <a href="http://eoh.ec.uiuc.edu/">Engineering Open House</a>. It consisted of an octave of plastic keys, each approximately 1 foot by 4 feet, which could be "played" by stepping on them. The notes were sent over MIDI to a computer to be synthesized as part of a Guitar Hero-style game. Each key contained force detection circuitry as well as LED strips to visually indicate the key press.
           </p>
-          <p class="image-container"><img src="assets/images/piano.jpg" alt="Picture of grand piano"></p>
+          <p class="image-container"><img src="assets/images/piano.jpg" alt="Photo of grand piano"></p>
           <h3 class="small end tag">wireless_lights</h3>
         </div>
 
-        <h3 id="wireless-lights-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>wireless_lights <span class="attr">link</span><span class="value">="<a href="https://github.com/SIGMusic/tonal-lightfield">GitHub</a>"</span></h3>
+        <h3 id="wireless-lights-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>wireless_lights <span class="attr">link</span><span class="value">="<a href="https://github.com/SIGMusic/aurora">GitHub</a>"</span></h3>
         <div class="hidden info wireless-lights-info">
           <p>
-            As a member of SIGMusic, I worked on two versions of a wireless lighting project that has been demonstrated at <a href="http://eoh.ec.uiuc.edu/">Engineering Open House</a>. The first version, in 2015, was to control eight RGB LED floodlights via Bluetooth-connected Arduino Pro Minis. It was controlled by a websocket server written in Python. While this setup mostly worked, we decided to improve it for 2016.
+            As a member of SIGMusic, I worked on two versions of a wireless lighting project that have been used in demonstrations at <a href="http://eoh.ec.uiuc.edu/">Engineering Open House</a>. The first version, in 2015, used Bluetooth-connected Arduino Pro Minis to control eight RGB LED floodlights. They were managed by a Raspberry Pi running a websocket server written in Python. While this setup mostly worked, we decided to improve it for 2016.
           </p>
           <p>
-            The second version used the same RGB LED floodlights, but with more suitable hardware and software. I designed and built an improved logic board for the lights and used nRF24L01+ radio modules instead of Bluetooth. I wrote a frequency hopping algorithm in addition to a multiprocess websocket server in C++.
+            The second version used the same RGB LED floodlights, but with more suitable hardware and software. I designed improved logic boards for the lights and used nRF24L01+ radio modules instead of Bluetooth. <a href="http://oshpark.com">OSH Park</a> fabricated all the circuit boards, and then I soldered them by repurposing a toaster oven as a reflow oven. I also wrote a frequency hopping algorithm in addition to a multiprocess websocket server in C++.
           </p>
+          <p class="image-container"><img src="assets/images/light_pcbs.jpg" alt="Photo of a logic board and a base station connector board"></p>
+          <p class="image-container"><img src="assets/images/light.jpg" alt="Photo of a wireless light"></p>
           <h3 class="small end tag">wireless_lights</h3>
+        </div>
+
+        <h3 id="led-clock-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>led_clock <span class="attr">link</span><span class="value">="<a href="https://hackaday.io/project/7681-the-clock-awakens">Hackaday.io</a>"</span></h3>
+        <div class="hidden info led-clock-info">
+          <p>
+            When the mechanical hands on my Star Wars clock broke, I decided to salvage the clock face by replacing the hands with an RGB LED strip. I used an ESP8266, a strip of 60 NeoPixels, and a 3D-printed frame to build a Wi-Fi LED clock. The ESP8266 connects to Wi-Fi, determines its time zone based on the IP address location, and then requests the time via NTP every few hours. I wrote the firmware in C++, including my own geolocation and NTP synchronization libraries.
+          </p>
+          <p>
+              The photo below was taken at 8:17:06 PM. Blue, green, and red LEDs represent the hour, minute, and second hands respectively (although this is configurable on the webserver's settings page). There are three different display modes: "ticking" hands, "smooth" hands, and progress bar mode. It also has the option of dimming the LEDs between sunset and sunrise, and it uses gamma correction to ensure the brightness appears linear.
+          </p>
+          <p class="image-container"><img src="assets/images/clock.jpg" alt="Photo of the LED clock"></p>
+          <h3 class="small end tag">led_clock</h3>
         </div>
 
         <h3 id="canitakethisclass-dropdown" class="small tag dropdown"><span class="expand" title="Click to toggle details">[+]</span>can_i_take_this_class <span class="attr">link</span><span class="value">="<a href="http://www.canitakethisclass.com">Website</a>"</span></h3>
@@ -101,7 +115,7 @@
           <p>
              The project is available on <a href="https://www.github.com/ajcord/DATA-Project">GitHub</a> and <a href="http://hackaday.io/project/2170-DMX-84%3A-Calculator-Controlled-Lights">Hackaday.io</a>. It was <a href="http://hackaday.com/2014/08/03/thp-entry-a-theatrical-lighting-controller-powered-by-a-calculator/">featured on Hackaday</a> on August 3, 2014. Several videos about the project are available on <a href="https://www.youtube.com/playlist?list=PLlO3h9nk0Mby0m-tr9vq_gIgWXpbRNCg-">YouTube</a>.
           </p>
-          <p class="image-container"><img src="assets/images/dmx-84.jpg" alt="Picture of DMX-84 adapter"></p>
+          <p class="image-container"><img src="assets/images/dmx-84.jpg" alt="Photo of DMX-84 adapter"></p>
           <h3 class="small end tag">dmx-84</h3>
         </div>
 
