@@ -31,8 +31,14 @@ body {
   color: #000;
 }
 
-#resume-content {
-  display: none;
+@media print {
+  html {
+    background-color: transparent;
+  }
+
+  #minimap, #minimap-viewport {
+    display: none;
+  }
 }
 
 #me {
@@ -226,10 +232,6 @@ p, li {
   height: 96px;
 }
 
-#get-resume-no-print {
-  display: none;
-}
-
 .csstransforms #minimap-viewport {
   position: fixed;
   background: rgba(0, 0, 0, 0.1);
@@ -267,85 +269,6 @@ p, li {
   pointer-events: none; /* Prevent playing YouTube videos in the minimap */
 }
 
-@media print {
-/* Show only the resume when printing instead of the actual page */
-  html {
-    background-color: transparent;
-  }
-
-  #content, #minimap, #minimap-viewport {
-    display: none;
-  }
-
-  #resume-content {
-    display: block;
-  }
-
-  @page {
-    margin: 0.75in;
-    size: 8.5in 11in;
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-    width: auto;
-    font-size: 11pt;
-  }
-
-  section {
-    margin: 0 0 0 1em;
-  }
-
-  section > h2 {
-    font-size: 1.25em;
-    margin: 0 0 0.25em 0.5em;
-  }
-
-  section > h3 {
-    font-size: 1.15em;
-    margin: 0 0 0.25em 1.5em;
-  }
-
-  .tag {
-    font-size: 1.75em;
-    margin: 0.5em 0;
-  }
-
-  .small {
-    font-size: 1.35em;
-  }
-
-  .subheading {
-    margin-left: 1.25em;
-  }
-
-  section > ul, section > p {
-    margin: -0.15em 0 0.75em 0;
-  }
-
-  #skills > ul {
-      margin-top: 0.5em;
-  }
-
-  section > p {
-    margin-left: 1.25em;
-    line-height: 1.25em;
-  }
-
-  li {
-    line-height: 1.2em;
-  }
-
-  #skills {
-    float: right;
-    max-width: 170pt;
-  }
-
-  #skills .tag {
-    margin: 0;
-  }
-}
 
 @media only screen and (max-width: 600px) {
 /* Respond to small screens */
@@ -420,15 +343,6 @@ p, li {
     width: 57px;
     height: 57px;
   }
-  /*
-  :not(#minimap) #get-resume-no-print {
-    display: block;
-  }
-
-  :not(#minimap) #get-resume-print {
-    display: none;
-  }
-  */
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
