@@ -49,7 +49,7 @@ body {
   font-size: 2.5em;
   font-weight: normal;
   font-family: "Courier New", "Courier", monospace;
-  color: #a00000;
+  color: #cf3434;
 }
 
 .subheading {
@@ -78,12 +78,12 @@ body {
 
 .tag:before {
   content: "<";
-  color: #00f;
+  color: #000;
 }
 
 .tag:after {
   content: ">";
-  color: #00f;
+  color: #000;
 }
 
 .end.tag {
@@ -98,16 +98,17 @@ body {
   content: "</";
 }
 
-.angle {
-  display: none;
-}
-
-.angle, .value {
-  color: #0000ff;
-}
-
 .attr {
-  color: #ff0000;
+  color: #62c400;
+}
+
+.value {
+  color: #d49f00;
+}
+
+.value:before {
+  content: "=";
+  color: #000;
 }
 
 #doctype {
@@ -123,11 +124,11 @@ body {
 
 #doctype > a:before {
   content: "!";
-  color: #00f;
+  color: #000;
 }
 
 a {
-  color: #00b;
+  color: #2f9ed1;
 }
 
 a > img, iframe {
@@ -239,7 +240,7 @@ p, li {
   top: 0;
   width: 225px;
   height: 25%;
-  cursor: pointer;
+  cursor: default;
   z-index: 510;
 }
 
@@ -256,7 +257,7 @@ p, li {
   width: 900px; /* Scales to 225px */
   padding-top: 40px;
   -webkit-user-select: none;
-  cursor: pointer;
+  cursor: default;
   z-index: 500;
   min-height: 400%; /* Cover the window vertically */
 }
@@ -269,6 +270,44 @@ p, li {
   pointer-events: none; /* Prevent playing YouTube videos in the minimap */
 }
 
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #272822;
+  }
+
+  body {
+    color: #fff;
+  }
+
+  .tag {
+    color: #ff6188;
+  }
+
+  .tag:before, .tag:after, #doctype > a:before {
+    color: #fff;
+  }
+
+  .value:before {
+    color: #fff;
+  }
+
+  .attr {
+    color: #a9dc76;
+  }
+
+  .value {
+    color: #ffd866;
+  }
+
+  a {
+    color: #78dce8;
+  }
+
+  .csstransforms #minimap-viewport {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
 
 @media only screen and (max-width: 600px) {
 /* Respond to small screens */
