@@ -4,14 +4,8 @@ $(".expand").click(function() {
   //Change the plus/minus icon and track the event
   if (info.css("display") == "none") {
     $(this).text("[-]");
-    //Track the expansion of the section
-    ga("send", "event", $(this).parent().parent().attr("id"), "expanded",
-        $(this).parent().attr("id"));
   } else {
     $(this).text("[+]");
-    //Track the collapse of the section
-    ga("send", "event", $(this).parent().parent().attr("id"), "collapsed",
-        $(this).parent().attr("id"));
   }
   //Animate the toggle with a sliding animation
   info.slideToggle({
@@ -23,18 +17,6 @@ $(".expand").click(function() {
 //Generate the validator link based on the current URL
 $("#valid").attr("href", "http://validator.w3.org/check?uri=" +
     encodeURIComponent(location.href));
-
-//Track downloads of the PDF version of the resume
-$("#download-link").click(function() {
-  ga("send", "event", "resume", "downloaded", "PDF");
-});
-
-//Track clicks on all outbound links
-$("a[href^=http]").click(function() {
-  ga("send", "event", "links", "clicked",
-      $(this).text() + " - " + $(this).attr("href"));
-});
-
 
 //Set up minimap if transforms are supported
 if (Modernizr.csstransforms) {
